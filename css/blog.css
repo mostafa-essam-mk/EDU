@@ -28,35 +28,13 @@
     padding-bottom: 50px;
 }
 .btn {
-    padding: 15px 35px;
-    border: 1px solid #F00;
+    padding: 15px 0;
+    text-align: center;
     outline: none;
-    color: red;
-    background-color: transparent;
     cursor: pointer;
     position: relative;
-}
-.btn:hover {
     background-image: linear-gradient(rgb(255 0 0), rgb(0 0 0));
     color: #FFF;
-}
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -15px;
-    width: 30px;
-    height: 1px;
-    background-color: #F00;
-}
-.btn::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -15px;
-    width: 30px;
-    height: 1px;
-    background-color: #F00;
 }
 /* End Of Component Section */
 
@@ -208,14 +186,8 @@ body {
 .blog .info .left img {
     width: 100%;
 }
-.blog .info .right {
-
-}
 .blog .info .right h2 {
-    padding: 15px 0;
-    text-align: center;
-    color: #FFF;
-    background-image: linear-gradient(#FFCA28, #F57F17);
+    cursor: initial;
 }
 .blog .info .right div {
     margin: 10px 0;
@@ -262,7 +234,7 @@ body {
     color: #FFF;
     font-size: 20px;
     cursor: pointer;
-    background-image: linear-gradient(#FFCA28, #F57F17);
+    /* background-image: linear-gradient(#FFCA28, #F57F17); */
 }
 @media (max-width: 700px){
     .blog .info,
@@ -277,6 +249,12 @@ body {
     }
     .blog .comment {
         margin: 0 5%;
+    }
+    .blog .comment form input,
+    .blog .comment form textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 50px;
     }
 }
 /* End Of Blog Section */
