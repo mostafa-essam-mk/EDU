@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="EDUCATION website..">
+        <title>EDU</title>
+        <!-- Render all elements normally -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Fontawesome CSS File -->
+        <link rel="stylesheet" href="css/all.min.css"> 
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="css/blog.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start Of Landing Section -->
+        <section class="landing">
+            <header>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <div class="links" id="links">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </header>
+            <div class="info">
+                <h1>Our Certificates & Online Programs For 2023</h1>
+            </div>
+        </section>
+        <!-- End Of Landing Section -->
+        <!-- Start Of Blog Section -->
+        <section class="blog section-padding">
+            <div class="info">
+                <div class="left">
+                    <img src="images/courses.jpg" alt="course">
+                </div>
+                <div class="right">
+                    <h2>Post Categories</h2>
+                    <div>
+                        <p>Business Analytics</p>
+                        <p>21</p>
+                    </div>
+                    <div>
+                        <p>Data Science</p>
+                        <p>28</p>
+                    </div>
+                    <div>
+                        <p>Machine Learning</p>
+                        <p>15</p>
+                    </div>
+                    <div>
+                        <p>Computer Science</p>
+                        <p>34</p>
+                    </div>
+                    <div>
+                        <p>AutoCAD</p>
+                        <p>42</p>
+                    </div>
+                    <div>
+                        <p>Journalism</p>
+                        <p>22</p>
+                    </div>
+                    <div>
+                        <p>Commerce</p>
+                        <p>13</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <h2>Our Certificates & Online Programs For 2023</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum cum dolorem. Aliquid cupiditate vitae debitis esse recusandae asperiores corporis repellat omnis, temporibus itaque similique deserunt ex quibusdam modi sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, reprehenderit vero ut assumenda error atque ab impedit, placeat quidem quaerat similique molestiae blanditiis illo quis rem qui nulla minus. Commodi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, libero aut. Cupiditate dolorum accusamus facere eligendi aliquam porro, nisi numquam, commodi ad adipisci aspernatur ducimus magni? Qui excepturi reiciendis animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima neque odio amet dolores, voluptas doloribus facere nemo, praesentium possimus modi saepe nisi dicta atque commodi recusandae corrupti distinctio eligendi! Placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio excepturi fuga eum omnis dolor commodi odit veritatis alias veniam est dolore ad repellat, autem, dignissimos harum iure, in asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eveniet ipsa voluptatibus, sit minima illo! Accusantium vitae sit officiis culpa aliquid ipsam quidem amet fugiat! Beatae reiciendis ab nemo ratione.</p>
+            </div>
+            <div class="comment">
+                <h1>Leave a Comment</h1>
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name..">
+                    <input type="email" placeholder="Enter Your Email..">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Enter Your Comment.."></textarea>
+                    <input type="submit" value="Post" class="post">
+                </form>
+            </div>
+        </section>
+        <!-- End Of Blog Section -->
+        <!-- Start Of About Section -->
+        <section class="about  section-padding">
+            <div class="heading">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium earum distinctio perspiciatis amet, ad quos nemo eligendi fugit expedita sit vel quo optio nulla consectetur dolorum nobis ut minus accusantium.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <footer>&#169; All Rights Reserved</footer>
+        </section>
+        <!-- End Of About Section -->
+
+        <!-- JavaScript for Toggle Menu -->
+        <script> 
+            var links = document.getElementById("links");
+            function showMenu(){
+                links.style.right = "0";
+            }
+            function hideMenu(){
+                links.style.right = "-100%";
+            }
+        </script>
+    </body>
+</html>

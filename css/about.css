@@ -1,0 +1,269 @@
+/* Start Of Variables Section */
+:root {
+    --first-font-color: #777;
+}
+/* End Of Variables Section */
+
+/* Start Of Component Section */
+.heading {
+    margin-bottom: 50px;
+    padding: 0 10px;
+    text-align: center;
+}
+.heading h1 {
+    margin: 0;
+}
+.heading p {
+    padding: 0 10%;
+    line-height: 1.5;
+    color: var(--first-font-color);
+}
+@media (max-width: 600px){
+    .heading p {
+        padding: 0 5%;
+    }
+}
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.btn {
+    padding: 15px 35px;
+    border: 1px solid #F00;
+    outline: none;
+    color: red;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.btn:hover {
+    background-image: linear-gradient(rgb(255 0 0), rgb(0 0 0));
+    color: #FFF;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 30px;
+    height: 1px;
+    background-color: #F00;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 30px;
+    height: 1px;
+    background-color: #F00;
+}
+/* End Of Component Section */
+
+/* Start Of Global Rules Section */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* End Of Global Rules Section */
+
+/* Start Of Landing Section */
+.landing {
+    width: 100%;
+    min-height: 70vb;
+    background-image: linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.8)), url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.landing header {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.landing header .logo img {
+    width: 150px;
+}
+.landing header .links {
+    flex: 1;
+    text-align: right;
+}
+.landing header i {
+    display: none;
+}
+.landing header .links i {
+    
+}
+.landing header .links ul li {
+    padding: 10px;
+    display: inline-block;
+    list-style: none;
+}
+.landing header .links ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+.landing header .links ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(255 0 0 / 0.6), rgb(0 0 0));
+    transition: 0.5s;
+}
+.landing header .links ul li a:hover::after {
+    width: 100%;
+}
+.landing .info {
+    margin: 100px auto;
+    text-align: center;
+    color: #FFF;
+    width: 90%;
+}
+.landing .info h1 {
+    margin: 0;
+    font-size: 50px;
+}
+@media (max-width: 750px){
+    .landing .info h1 {
+        font-size: 35px;
+    }
+    .landing header .links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vb;
+        width: 100%;
+        background-image: linear-gradient(to right, rgb(255 0 0 / 0.6), rgb(0 0 0));
+        z-index: 1;
+        position: fixed;
+        transition: 1s;
+    }
+    .landing header .links ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .landing header .links ul li {
+        display: block;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .landing header i {
+        width: fit-content;
+        font-size: 30px;
+        color: #FFF;
+        cursor: pointer;
+        display: block;
+    }
+    .landing header .links i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .landing header .fa-bars {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 25px;
+    }
+}
+/* End Of Landing Section */
+
+/* Start Of Content Section */
+.content {
+    margin: 50px 10% 0;
+    display: flex;
+}
+.content div {
+    flex-basis: 50%;
+}
+.content .left h1 {
+    margin: 0;
+    font-size: 45px;
+}
+.content .left p {
+    margin: 25px 0;
+    padding-right: 100px;
+    line-height: 1.5;
+    font-size: 17px;
+    color: var(--first-font-color);
+}
+.content .left button {
+    margin-left: 15px;
+}
+.content .right {
+
+}
+.content .right img {
+    max-width: 100%;
+}
+@media (max-width: 1200px){
+    .content .left h1 {
+        font-size: 30px;
+    }
+    .content .left p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+}
+@media (max-width: 1000px){
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content .right {
+        margin-top: 50px;
+        width: 80%;
+    }
+    .content .left p {
+        padding-right: 0;
+    }
+    .content .left button {
+        margin-left: 0;
+    }
+}
+/* End Of Content Section */
+
+/* Start Of About Section */
+.about {
+    text-align: center;
+
+}
+@media (max-width: 600px){
+    .about .links {
+        margin-top: -20px;
+    }
+}
+.about .links a {
+    color: rgb(255 0 0 / 0.9);
+    text-decoration: none;
+}
+.about .links a i {
+    margin: 0 20px;
+    font-size: 20px;
+}
+.about footer {
+    margin-top: 30px;
+    margin-bottom: -40px;
+    color: #777;
+    font-size: 20px;
+}
+/* End Of About Section */
